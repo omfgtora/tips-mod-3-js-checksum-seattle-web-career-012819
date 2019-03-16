@@ -45,7 +45,7 @@ function getChecksum(data) {
         largest = item
       }
     });
-    
+
     let diff = (largest - smallest)
     results.push(diff)
   });
@@ -66,5 +66,5 @@ var data = [
   [428, 4321, 2786, 6683, 3921],
   [265, 262, 6206, 2207, 5712]
 ]
-
-console.log(getChecksum(data))
+console.log("Easy data: ", getChecksum(easyData))
+console.log("Data: ", getChecksum(data))
